@@ -77,7 +77,50 @@ iterations:
       - title: Obrazki
         material: 55ee1f776c1d543104d653cc
         annotationsMergeWithAuto: true
-        annotations: null
+        annotations:
+          annotations:
+            - type: comment
+              description: Responsywny obrazek zaimplementujemy używając elementu `picture`
+              timestamp: 1.22
+            - type: comment
+              description: Przeniesiemy istniejący tag `img` - będzie słuzył na wypadek, gdyby przeglądarka nie obsługiwala `picture`
+              timestamp: 7.3
+            - type: comment
+              description: Znaczniki `source` służą do wskazania jakie obrazki powinny zostać wyświetlone w zależności od urządzenia
+              timestamp: 10.8
+            - type: comment
+              description: Opcjonalny atrybut `media` obsługuje taką samą składnię jak `media-query`
+              timestamp: 22.0
+            - type: comment
+              description: Atrybut `srcset` pozwala na zdefiniowanie ścieżki do obrazka -- umie też obsłużyć różne rozdzielczości
+              timestamp: 44.0
+            - type: comment
+              description: Tagi `2x` oraz `1x` służą do określenia gęstości ekranu dla jakich dany obrazek będzie pobrany
+              timestamp: 77.9
+            - type: comment
+              description: Element `picture` może zawierać więcej niż 1 srcset, obsługując w ten sposób wiele media-queries.
+              timestamp: 88.1
+            - type: comment
+              description: Sprawdź działanie `picture` -- na tabletach oraz telefonach wyświetli się inny obrazek niż dotychczas
+              timestamp: 134.9
+            - type: comment
+              description: Ten obraz wyświetli się dla ekranów szerszych niż 1024px
+              timestamp: 152.1
+            - type: comment
+              description: Ten wyświetli się dla mniejszych urządzeń
+              timestamp: 156.0
+            - type: comment
+              description: Prosty tag `img` zostanie użyty, jeżeli przeglądarka nie wspiera tagu `picture`
+              timestamp: 160.9
+            - type: comment
+              description: Zajmijmy się jeszcze obrazami w tle.
+              timestamp: 165.7
+            - type: comment
+              description: Właściwość `background-size` pozwala na określenie rozmiaru i sposobu dopasowania tła
+              timestamp: 175.6
+            - type: comment
+              description: Wartość `cover` sprawia, że obraz wypełni cały kontenter, zachowując proporcje. Część obrazu może zostać przycięta.
+              timestamp: 184.0
   - title: Iteracja 4
     tasks: []
     materials:
