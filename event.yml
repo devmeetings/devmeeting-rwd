@@ -52,7 +52,41 @@ iterations:
               timestamp: 58.0
       - title: Media Query
         material: 55ee10f46c1d543104d64c39
-        annotations: null
+        annotations:
+          annotations:
+            - type: comment
+              description: Pierwszym krokiem do przystosowania strony do urządzeń mobilmych jest ustawienie odpowiedniego metatagu `viewport`
+              timestamp: 1.5
+            - type: comment
+              description: Wartość `width=device-width` ustala szerokość strony na pełną szerokość ekranu urządzenia. `initial-scale=1` określa domyślny zoom.
+              timestamp: 38.7
+            - type: comment
+              description: 'Teraz możemy stosować `media query`: specjalną składnię pozwalającą na zmianę styli strony w zależności od właściwości urządzenia'
+              timestamp: 44.6
+            - type: comment
+              description: Style wewnątrz `{ }` tego *media query* będą aplikowane tylko dla urządzeń o szerokości ekranu nie większej niż 1024px.
+              timestamp: 47.2
+            - type: comment
+              description: Ten styl pisania *media queries* to `desktop-first`, najczęściej stosowany, gdy istniejąca strona jest przystosowywana do potrzeb urządzeń mobilnych
+              timestamp: 63.5
+            - type: comment
+              description: Obecny nagłówek jest zbyt duży dla małych ekranów. Zmieńmy jego wielkość.
+              timestamp: 77.2
+            - type: comment
+              description: Przetestuj działanie na różnych szerokościach ekranu.
+              timestamp: 104.2
+            - type: comment
+              description: Drugie podejście to `mobile-first` - strona wyświetla się dobrze na urządzeniach mobilnych i trzeba zmienić style dla dużych ekranów.
+              timestamp: 109.9
+            - type: comment
+              description: Style wewnątrz tego *media query* będą aktywne dla ekranów o minimalnej szerokości 1025px (dodatkowy 1px, żeby określić ekrany większe niż 1024px)
+              timestamp: 138.2
+            - type: comment
+              description: W tym podejściu musimy zmienić przygotowane style, tak by wyświetlały się poprawnie na mniejszych ekranach
+              timestamp: 157.7
+            - type: comment
+              description: Wewnątrz media query dopiszemy style dla desktopu
+              timestamp: 165.0
 
   - title: Iteracja 2
     tasks: []
