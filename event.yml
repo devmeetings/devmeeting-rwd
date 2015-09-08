@@ -94,5 +94,37 @@ iterations:
       - title: Nawigacja
         material: 55ee28f56c1d543104d65ef6
         annotationsMergeWithAuto: true
-        annotations: null
+        annotations:
+          annotations:
+            - type: comment
+              description: Obecna nawigacja nie mieści się na małych ekranach
+              timestamp: 1.0
+            - type: comment
+              description: Jednym z najprostszych rozwiązań jest stworzenie dropdowna z listą linków
+              timestamp: 12.3
+            - type: comment
+              description: Jako `value` podany jest id sekcji.
+              timestamp: 53.0
+            - type: comment
+              description: Select powinien być widoczny tylko na urządzeniach mobilnych
+              timestamp: 105.0
+            - type: comment
+              description: Nawigacja będzie widoczna tylko na desktopie
+              timestamp: 115.0
+            - type: comment
+              description: Klasa ukrywająca zawartość na urządzeniach mobilnych jest już gotowa
+              timestamp: 135.0
+            - type: comment
+              description: Dopiszmy analogiczną klasę.
+              timestamp: 145.0
+            - type: comment
+              description: Należy ostylować selecta.
+              timestamp: 212.5
+            - type: comment
+              description: Używając jQuery obsłużymy wybór sekcji.
+              timestamp: 343.0
+            - type: comment
+              description: W tym przypadku najprostszym rozwiązaniem będzie kliknięcie w link o tym samym adresie.
+              timestamp: 385.0
+
 links: []
