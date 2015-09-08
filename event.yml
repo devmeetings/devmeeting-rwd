@@ -1,0 +1,98 @@
+title: RWD
+name: rwd
+image: 'https://devmeetings.github.io/devmeeting-es6/gfx/es6.png'
+baseSlide: 55795e83d91ce0413065802c
+visible: false
+removed: false
+pin: 80085
+liveLink: 'https://xplatform.org/live/es6-en'
+iterations:
+  - title: Iteracja 1
+    tasks: []
+    materials:
+      - title: Intro
+        material: 55ee0dde6c1d543104d649c7
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations:
+            - type: comment
+              description: Przygotowaliśmy dla Was prostą, nieresponsywną stronę.
+              timestamp: 0.4
+            - type: comment
+              description: Dołączony `normalize.css` niweluje różnice między przeglądarkami.
+              timestamp: 6.2
+            - type: comment
+              description: W pliku `fonts.css` przygotowaliśmy definicje fontów.
+              timestamp: 15.0
+            - type: comment
+              description: Plik `icons.css` zawiera definicje ikon.
+              timestamp: 19.0
+            - type: comment
+              description: W tych plikach znajdują się style strony. Poświęć chwilę, żeby się z nimi zapoznać.
+              timestamp: 23.0
+            - type: comment
+              description: Na stronie znajduje się między innymi logo.
+              timestamp: 31.0
+            - type: comment
+              description: Oraz nawigacja. Zwróc uwagę na konwencję nazewnictwa klas (BEM, block__element--modifier)
+              timestamp: 35.0
+            - type: comment
+              description: Lewa część headera zawiera tytuł oraz podtytuł strony
+              timestamp: 36.3
+            - type: comment
+              description: Prawa część to teskt promocyjny oraz przycisk
+              timestamp: 38.3
+            - type: comment
+              description: Do strony dołączyliśmy także jQuery oraz plik ze skryptami
+              timestamp: 42.0
+            - type: comment
+              description: Po prawej stronie ekranu możesz przełączać się między podglądami strony na różnych urządzeniach
+              timestamp: 53.3
+            - type: pause
+              timestamp: 58.0
+      - title: Media Query
+        material: 55ee10f46c1d543104d64c39
+        annotations: null
+
+  - title: Iteracja 2
+    tasks: []
+    materials:
+      - title: 'Jednostki - em, rem i %'
+        material: 55ee14a06c1d543104d64dda
+        annotationsMergeWithAuto: true
+        annotations: null
+      - title: 'Jednostki - vw, vh, vmin, vmax'
+        material: 55ee16116c1d543104d64e66
+        annotations: null
+      - title: Pokazywanie/ukrywanie zawartości
+        material: 55ee16956c1d543104d64ed4
+        annotationsMergeWithAuto: true
+        annotations: null
+      - title: Formularz
+        material: 55ee18076c1d543104d64f30
+        annotations: null
+  - title: Iteracja 3
+    tasks: []
+    materials:
+      - title: Obrazki
+        material: 55ee1f776c1d543104d653cc
+        annotationsMergeWithAuto: true
+        annotations: null
+  - title: Iteracja 4
+    tasks: []
+    materials:
+      - title: Grid
+        material: 55ee21736c1d543104d65573
+        annotationsMergeWithAuto: true
+        annotations: null
+      - title: Grid - flexbox
+        material: 55ee26c76c1d543104d65c57
+        annotations: null
+  - title: Iteracja 5
+    tasks: []
+    materials:
+      - title: Nawigacja
+        material: 55ee28f56c1d543104d65ef6
+        annotationsMergeWithAuto: true
+        annotations: null
+links: []
