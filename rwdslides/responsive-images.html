@@ -1,0 +1,53 @@
+<h3>Najprostsze podejście</h3>
+<p>
+	Minimalnym wysiłkiem można zaimplementować obrazy, które dobrze skalują się wewnątrz dowolnego kontenera.
+<pre>img {
+	max-width: 100%;
+	display: block;	
+}</pre>
+	Ogromną zaletą tego rozwiązania jest prostota. 
+	Wadą jest natomiast stałe utrzymywanie tych samych proporcji, co może stanowić problem na małych ekranach, gdzie po przeskalowaniu detale przestaną być widoczne: <br>
+	<div class="text-center">
+		<img src="//local.xplatform.org/cdn/rwd/1.0.0/images/assets/responsive-images-basic.png">
+	</div>
+</p>
+
+<h3>Proste przycinanie</h3>
+<p>
+	W sytuacjach, gdzie zdjęcie po proporcjonalnym przeskalowaniu okazałoby się zbyt małe, warto jest obciąć część obrazu i dzięki temu mniej drastycznie zmniejszyć rozmiar obrazka.
+	<div class="text-center">
+		<img src="//local.xplatform.org/cdn/rwd/1.0.0/images/assets/responsive-images-cropping.png">
+	</div>
+</p>
+<p>
+	Proste cropowanie (przycinanie) sprawuje się dobrze, gdy ważny dla zdjęcia detal jest na jego środku; problem pojawia się, gdy detal leży blisko bocznej krawędzi:
+	<div class="text-center">
+		<img src="//local.xplatform.org/cdn/rwd/1.0.0/images/assets/responsive-images-cropping-problems.png">
+	</div>
+</p>
+
+<h3>Przycinanie względem wierzchołka</h3>
+<p>
+	Bardziej zaawansowane rozwiązanie to zaimplementowanie klas, które pozwolą wybrać wierzchołek, do którego zdjęcie będzie przyczepione, np:
+	<div class="text-center">
+		<img src="//local.xplatform.org/cdn/rwd/1.0.0/images/assets/responsive-images-cropping-problems-v.png">
+	</div>
+</p>
+
+<h3>Focal point</h3>
+<p>
+	Technika <b>focal point</b> to rozwinięcie poprzedniego rozwiązania. 
+	Zamiast przycinać względem jednego z 4 wierzchołków, na zdjęcie nakładana jest siatka składająca się z dużej liczby elementów. 
+	Użytkownik może dzięki temu dokładnie określić, względem którego z nich obraz powinien zostać przeskalowany.
+	
+	<div class="text-center">
+		<img src="//local.xplatform.org/cdn/rwd/1.0.0/images/assets/responsive-images-focal-point.png">
+	</div>
+</p>
+
+<h2>Materiały</h2>
+<ul>
+	<li><a href="https://css-tricks.com/crop-top/">Crop Top</a></li>
+	<li><a href="http://designshack.net/articles/css/focal-point-intelligent-cropping-of-responsive-images/">Focal Point: Intelligent Cropping of Responsive Images</a></li>
+	<li><a href="http://stackoverflow.com/questions/18247356/how-to-center-crop-an-image-img-in-fluid-width-container">How to center crop an image in fluid width container</a></li>
+</ul>

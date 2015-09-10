@@ -2,13 +2,16 @@ title: RWD
 name: rwd
 image: 'https://devmeetings.github.io/devmeeting-es6/gfx/es6.png'
 baseSlide: 55795e83d91ce0413065802c
-visible: false
+visible: true
 removed: false
 pin: 80085
 liveLink: 'https://xplatform.org/live/es6-en'
 iterations:
   - title: Iteracja 1
-    tasks: []
+    tasks:
+      - title: Task 1.
+        url: 'https://devmeetings.github.io/devmeeting-rwd/pl_01.html'
+        noOfTasks: 6
     materials:
       - title: Intro
         material: 55ee0dde6c1d543104d649c7
@@ -16,26 +19,26 @@ iterations:
         annotations:
           annotations:
             - type: comment
-              description: Przygotowaliśmy dla Was prostą, nieresponsywną stronę.
+              description: 'Przygotowaliśmy dla Was prostą, nieresponsywną stronę.'
               timestamp: 0.4
             - type: comment
               description: Dołączony `normalize.css` niweluje różnice między przeglądarkami.
               timestamp: 6.2
             - type: comment
               description: W pliku `fonts.css` przygotowaliśmy definicje fontów.
-              timestamp: 15.0
+              timestamp: 15
             - type: comment
               description: Plik `icons.css` zawiera definicje ikon.
-              timestamp: 19.0
+              timestamp: 19
             - type: comment
-              description: W tych plikach znajdują się style strony. Poświęć chwilę, żeby się z nimi zapoznać.
-              timestamp: 23.0
+              description: 'W tych plikach znajdują się style strony. Poświęć chwilę, żeby się z nimi zapoznać.'
+              timestamp: 23
             - type: comment
               description: Na stronie znajduje się między innymi logo.
-              timestamp: 31.0
+              timestamp: 31
             - type: comment
-              description: Oraz nawigacja. Zwróc uwagę na konwencję nazewnictwa klas (BEM, block__element--modifier)
-              timestamp: 35.0
+              description: 'Oraz nawigacja. Zwróc uwagę na konwencję nazewnictwa klas (BEM, block__element--modifier)'
+              timestamp: 35
             - type: comment
               description: Lewa część headera zawiera tytuł oraz podtytuł strony
               timestamp: 36.3
@@ -44,12 +47,12 @@ iterations:
               timestamp: 38.3
             - type: comment
               description: Do strony dołączyliśmy także jQuery oraz plik ze skryptami
-              timestamp: 42.0
+              timestamp: 42
             - type: comment
               description: Po prawej stronie ekranu możesz przełączać się między podglądami strony na różnych urządzeniach
               timestamp: 53.3
             - type: pause
-              timestamp: 58.0
+              timestamp: 58
       - title: Media Query
         material: 55ee10f46c1d543104d64c39
         annotations:
@@ -58,16 +61,16 @@ iterations:
               description: Pierwszym krokiem do przystosowania strony do urządzeń mobilmych jest ustawienie odpowiedniego metatagu `viewport`
               timestamp: 1.5
             - type: comment
-              description: Wartość `width=device-width` ustala szerokość strony na pełną szerokość ekranu urządzenia. `initial-scale=1` określa domyślny zoom.
+              description: "Wartość\_`width=device-width` ustala szerokość\_strony na pełną szerokość ekranu\_urządzenia. `initial-scale=1` określa domyślny zoom."
               timestamp: 38.7
             - type: comment
               description: 'Teraz możemy stosować `media query`: specjalną składnię pozwalającą na zmianę styli strony w zależności od właściwości urządzenia'
               timestamp: 44.6
             - type: comment
-              description: Style wewnątrz `{ }` tego *media query* będą aplikowane tylko dla urządzeń o szerokości ekranu nie większej niż 1024px.
+              description: "Style wewnątrz `{ }` tego *media query* będą\_aplikowane tylko dla urządzeń o szerokości ekranu nie większej niż 1024px."
               timestamp: 47.2
             - type: comment
-              description: Ten styl pisania *media queries* to `desktop-first`, najczęściej stosowany, gdy istniejąca strona jest przystosowywana do potrzeb urządzeń mobilnych
+              description: 'Ten styl pisania *media queries* to `desktop-first`, najczęściej stosowany, gdy istniejąca strona jest przystosowywana do potrzeb urządzeń mobilnych'
               timestamp: 63.5
             - type: comment
               description: Obecny nagłówek jest zbyt duży dla małych ekranów. Zmieńmy jego wielkość.
@@ -76,20 +79,28 @@ iterations:
               description: Przetestuj działanie na różnych szerokościach ekranu.
               timestamp: 104.2
             - type: comment
-              description: Drugie podejście to `mobile-first` - strona wyświetla się dobrze na urządzeniach mobilnych i trzeba zmienić style dla dużych ekranów.
+              description: "Drugie podejście to `mobile-first` - strona wyświetla się\_dobrze na urządzeniach mobilnych i trzeba zmienić style dla dużych ekranów."
               timestamp: 109.9
             - type: comment
-              description: Style wewnątrz tego *media query* będą aktywne dla ekranów o minimalnej szerokości 1025px (dodatkowy 1px, żeby określić ekrany większe niż 1024px)
+              description: 'Style wewnątrz tego *media query* będą aktywne dla ekranów o minimalnej szerokości 1025px (dodatkowy 1px, żeby określić ekrany większe niż 1024px)'
               timestamp: 138.2
             - type: comment
-              description: W tym podejściu musimy zmienić przygotowane style, tak by wyświetlały się poprawnie na mniejszych ekranach
+              description: 'W tym podejściu musimy zmienić przygotowane style, tak by wyświetlały się poprawnie na mniejszych ekranach'
               timestamp: 157.7
             - type: comment
               description: Wewnątrz media query dopiszemy style dla desktopu
-              timestamp: 165.0
-
+              timestamp: 165
+      - title: Materiały
+        deck:
+          deck: 55efdf6e1d83326e7d31becb
+          to: 55f0a0497c14e5e84baca37c
+          from: 55efdf781d83326e7d31becc
+        annotations: null
   - title: Iteracja 2
-    tasks: []
+    tasks:
+      - title: Task 2.
+        url: 'https://devmeetings.github.io/devmeeting-rwd/pl_02.html'
+        noOfTasks: 5
     materials:
       - title: 'Jednostki - em, rem i %'
         material: 55ee14a06c1d543104d64dda
@@ -97,19 +108,19 @@ iterations:
         annotations:
           annotations:
             - type: comment
-              description: Najczęściej wykorzystywane w RWD jednostki to `em` i `rem`, które pozwalają wymiarować względem rozmiaru czcionki
-              timestamp: 3.0
+              description: 'Najczęściej wykorzystywane w RWD jednostki to `em` i `rem`, które pozwalają wymiarować względem rozmiaru czcionki'
+              timestamp: 3
             - type: comment
               description: 'Rozmiar w `em` jest wyliczany na podstawie rozmiaru czcionki elementu nadrzędnego, na przykład: `2em = 2 * 16px`'
-              timestamp: 9.0
+              timestamp: 9
             - type: comment
               description: 'Rozmiar w `rem`, czyli `root em` jest wyliczany względem rozmiaru czcionki elemenu `html`'
-              timestamp: 17.0
+              timestamp: 17
             - type: comment
               description: 'Zmieńmy szerokości w `px` na ich odpowiedniki w `rem` - w tym przypadku `1120px/16px => 70rem`'
               timestamp: 26.2
             - type: comment
-              description: 'Przy okazji: stała szerokość konternera to zły pomysł - lepiej dopasować ją do rozmiaru ekranu'
+              description: "Przy okazji: stała szerokość\_konternera to zły pomysł - lepiej dopasować ją\_do rozmiaru ekranu"
               timestamp: 37.5
             - type: comment
               description: Zmieńmy resztę jednostek
@@ -118,13 +129,13 @@ iterations:
               description: Niektóre wymiary warto pozostawić w `px` - dobrym kandydatem może być `border-radius`
               timestamp: 104.1
             - type: comment
-              description: Określenie wartości w `%` również może być przydatne, szczególnie w przypadku układu kolumn
+              description: 'Określenie wartości w `%` również może być przydatne, szczególnie w przypadku układu kolumn'
               timestamp: 184.3
             - type: comment
-              description: Proporcje tego układu możnaby wyliczyć bardziej dokładnie. W praktyce strony responsywne często przestają być "pixel-perfect".
+              description: "Proporcje tego układu możnaby wyliczyć bardziej dokładnie. W praktyce strony responsywne często przestają być\_\"pixel-perfect\"."
               timestamp: 192.9
             - type: comment
-              description: Wszystkie jednostki zostały skonwertowane, a wygląd strony pozostał ten sam. Dlaczego to zrobiliśmy?
+              description: 'Wszystkie jednostki zostały skonwertowane, a wygląd strony pozostał ten sam. Dlaczego to zrobiliśmy?'
               timestamp: 327.1
             - type: comment
               description: Zmiana jednej wartości - rozmiaru tekstu - pozwala proporcjonalnie przeskalować rozmiar wszystkich elementów strony
@@ -132,31 +143,29 @@ iterations:
             - type: comment
               description: Zmieńmy tę podstawową wartość korzystając z `media query`
               timestamp: 359.9
-
       - title: 'Jednostki - vw, vh, vmin, vmax'
         material: 55ee16116c1d543104d64e66
         annotationsMergeWithAuto: true
         annotations:
           annotations:
             - type: comment
-              description: Do strony dodamy sekcję zawierającą nieco tekstu oraz obraz.
+              description: "Do strony dodamy sekcję\_zawierającą nieco tekstu oraz obraz."
               timestamp: 5.6
             - type: comment
-              description: Tekst jest nieco nieczytelny - kolumna jest zbyt szeroka. Należy dopasować rozmiar tekstu do wielkości ekranu.
+              description: "Tekst jest nieco nieczytelny - kolumna jest zbyt szeroka. Należy dopasować\_rozmiar tekstu do wielkości ekranu."
               timestamp: 12.4
             - type: comment
-              description: Możemy w tym celu wykorzystać jedstkę `vw` oznaczającą procent szerokości, czyli `1vw = 1% szerokości ekranu`.
+              description: "Możemy w tym celu wykorzystać\_jedstkę `vw` oznaczającą\_procent szerokości, czyli `1vw = 1% szerokości ekranu`."
               timestamp: 16.6
             - type: comment
-              description: Oprócz `vw` dostępne są jeszcze `vh` (procent wysokości), `vmin` (procent mniejszej z tych dwóch wartości), `vmax` (procent większej)
+              description: 'Oprócz `vw` dostępne są jeszcze `vh` (procent wysokości), `vmin` (procent mniejszej z tych dwóch wartości), `vmax` (procent większej)'
               timestamp: 21.4
             - type: comment
-              description: Rozmiar tekstu w sekcji "About" będzie skalowany względem szerokości ekranu. Celem jest osiągnięcie optymalnej liczby 80 znaków w linii.
+              description: 'Rozmiar tekstu w sekcji "About" będzie skalowany względem szerokości ekranu. Celem jest osiągnięcie optymalnej liczby 80 znaków w linii.'
               timestamp: 31.4
             - type: comment
-              description: Na małych ekranach liczba znaków w kolumnie zwykle będzie mniejsza. Użyjmy media query, żeby ograniczyć skalowanie do dużych ekranów.
+              description: 'Na małych ekranach liczba znaków w kolumnie zwykle będzie mniejsza. Użyjmy media query, żeby ograniczyć skalowanie do dużych ekranów.'
               timestamp: 51.6
-
       - title: Pokazywanie/ukrywanie zawartości
         material: 55ee16956c1d543104d64ed4
         annotationsMergeWithAuto: true
@@ -171,7 +180,6 @@ iterations:
             - type: comment
               description: Implementacja tej klasy to ćwiczenie z wykorzystania media query
               timestamp: 22.4
-
       - title: Formularz
         material: 55ee18076c1d543104d64f30
         annotationsMergeWithAuto: true
@@ -184,11 +192,20 @@ iterations:
               description: Najważniejszym aspektem jest odpowiednie ustawienie rodzajów pól.
               timestamp: 19.1
             - type: comment
-              description:  Dzięki temu urządzenia mobile wyświetlą odpowiednią klawiaturę/kontrolkę.
-              timestamp: 27.0
+              description: "Dzięki temu urządzenia mobile wyświetlą\_odpowiednią\_klawiaturę/kontrolkę."
+              timestamp: 27
+      - title: Materiały
+        deck:
+          deck: 55efdf6e1d83326e7d31becb
+          to: 55f0cd227c14e5e84baca480
+          from: 55f0a0497c14e5e84baca37c
+        annotations: null
 
   - title: Iteracja 3
-    tasks: []
+    tasks:
+      - title: Task 3.
+        url: 'https://devmeetings.github.io/devmeeting-rwd/pl_03.html'
+        noOfTasks: 5
     materials:
       - title: Obrazki
         material: 55ee1f776c1d543104d653cc
@@ -199,22 +216,22 @@ iterations:
               description: Responsywny obrazek zaimplementujemy używając elementu `picture`
               timestamp: 1.22
             - type: comment
-              description: Przeniesiemy istniejący tag `img` - będzie słuzył na wypadek, gdyby przeglądarka nie obsługiwala `picture`
+              description: 'Przeniesiemy istniejący tag `img` - będzie słuzył na wypadek, gdyby przeglądarka nie obsługiwala `picture`'
               timestamp: 7.3
             - type: comment
               description: Znaczniki `source` służą do wskazania jakie obrazki powinny zostać wyświetlone w zależności od urządzenia
               timestamp: 10.8
             - type: comment
               description: Opcjonalny atrybut `media` obsługuje taką samą składnię jak `media-query`
-              timestamp: 22.0
+              timestamp: 22
             - type: comment
               description: Atrybut `srcset` pozwala na zdefiniowanie ścieżki do obrazka -- umie też obsłużyć różne rozdzielczości
-              timestamp: 44.0
+              timestamp: 44
             - type: comment
               description: Tagi `2x` oraz `1x` służą do określenia gęstości ekranu dla jakich dany obrazek będzie pobrany
               timestamp: 77.9
             - type: comment
-              description: Element `picture` może zawierać więcej niż 1 srcset, obsługując w ten sposób wiele media-queries.
+              description: 'Element `picture` może zawierać więcej niż 1 srcset, obsługując w ten sposób wiele media-queries.'
               timestamp: 88.1
             - type: comment
               description: Sprawdź działanie `picture` -- na tabletach oraz telefonach wyświetli się inny obrazek niż dotychczas
@@ -224,9 +241,9 @@ iterations:
               timestamp: 152.1
             - type: comment
               description: Ten wyświetli się dla mniejszych urządzeń
-              timestamp: 156.0
+              timestamp: 156
             - type: comment
-              description: Prosty tag `img` zostanie użyty, jeżeli przeglądarka nie wspiera tagu `picture`
+              description: 'Prosty tag `img` zostanie użyty, jeżeli przeglądarka nie wspiera tagu `picture`'
               timestamp: 160.9
             - type: comment
               description: Zajmijmy się jeszcze obrazami w tle.
@@ -235,10 +252,20 @@ iterations:
               description: Właściwość `background-size` pozwala na określenie rozmiaru i sposobu dopasowania tła
               timestamp: 175.6
             - type: comment
-              description: Wartość `cover` sprawia, że obraz wypełni cały kontenter, zachowując proporcje. Część obrazu może zostać przycięta.
-              timestamp: 184.0
+              description: 'Wartość `cover` sprawia, że obraz wypełni cały kontenter, zachowując proporcje. Część obrazu może zostać przycięta.'
+              timestamp: 184
+      - title: Materiały
+        deck:
+          deck: 55efdf6e1d83326e7d31becb
+          to: 55f0b1957c14e5e84baca459
+          from: 55f0cd227c14e5e84baca480
+        annotations: null
+
   - title: Iteracja 4
-    tasks: []
+    tasks:
+      - title: Task 4.
+        url: 'https://devmeetings.github.io/devmeeting-rwd/pl_04.html'
+        noOfTasks: 5
     materials:
       - title: Grid
         material: 55ee21736c1d543104d65573
@@ -247,24 +274,24 @@ iterations:
           annotations:
             - type: comment
               description: Prawdopodobnie najczęściej wykorzystywanym elementem RWD są implementacje układów kolumnowych (`grid`).
-              timestamp: 2.0
+              timestamp: 2
             - type: comment
-              description: Dodajmy sekcję "Features", która posłuży za przykład dla prostego grida.
+              description: 'Dodajmy sekcję "Features", która posłuży za przykład dla prostego grida.'
               timestamp: 5.2
             - type: comment
-              description: 'Wszystkie elementy umieścimy w kontenerze `.grid`.'
+              description: Wszystkie elementy umieścimy w kontenerze `.grid`.
               timestamp: 42.6
             - type: comment
-              description: 'Zwróc uwagę na klasy: `.grid__item--1-of-3` oznacza, że dany element zajmuje jedną kolumnę w układzie trójkolumnowym'
+              description: "Zwróc uwagę na klasy: `.grid__item--1-of-3` oznacza, że dany element zajmuje jedną\_kolumnę w układzie trójkolumnowym"
               timestamp: 52.2
             - type: comment
-              description: 'Każdy z elementów siatki będzie miał tę samą klasę.'
+              description: "Każdy z elementów siatki będzie miał tę\_samą klasę."
               timestamp: 70.4
             - type: comment
               description: Grid zaimplementujemy w pliku `css/grid.css`.
               timestamp: 99.2
             - type: comment
-              description: Jest to nowy plik, więc trzeba dołączyć go do strony.
+              description: 'Jest to nowy plik, więc trzeba dołączyć go do strony.'
               timestamp: 121.6
             - type: comment
               description: W naszym przypadku kontener nie potrzebuje ostylowania.
@@ -273,7 +300,7 @@ iterations:
               description: Elementy siatki powinny zachowywyać odstęp od lewej i prawej strony.
               timestamp: 182.4
             - type: comment
-              description: Użyjmy `float`, żeby móc ustawić elementy obok siebie.
+              description: 'Użyjmy `float`, żeby móc ustawić elementy obok siebie.'
               timestamp: 214.3
             - type: comment
               description: '`float` popsuł flow dokumentu. Żeby to naprawić dodamy tzw. `clearfix` do klasy `.grid`.'
@@ -282,16 +309,14 @@ iterations:
               description: Więcej informacji o `clearfix` znajdziesz w dodatkowych materiałach.
               timestamp: 276.1
             - type: comment
-              description: Układ 3-kolumnowy osiągniemy ustawiając pojedynczej kolumnie szerokość 1/3 kontenera.
+              description: "Układ 3-kolumnowy osiągniemy ustawiając pojedynczej kolumnie szerokość\_1/3 kontenera."
               timestamp: 290.6
             - type: comment
-              description: To rozwiązanie nieźle sprawdza się na komputerze i tablecie, ale kolumny są zbyt wąskie dla telefonu.
-              timestamp: 329.0
+              description: "To rozwiązanie nieźle sprawdza się\_na komputerze i tablecie, ale kolumny są zbyt wąskie dla telefonu."
+              timestamp: 329
             - type: comment
-              description: Przeniesiemy określenie szerokości kolumny do media query. Na telefonach układ zmieni się na jednokolumnowy.
+              description: "Przeniesiemy określenie szerokości kolumny do media query. Na telefonach układ zmieni się\_na jednokolumnowy."
               timestamp: 344.3
-
-
       - title: Grid - flexbox
         material: 55ee26c76c1d543104d65c57
         annotations:
@@ -300,7 +325,7 @@ iterations:
               description: Alternatywą dla gridów bazujących na `float` są nowoczesne gridy oparte o `flexbox`.
               timestamp: 0.4
             - type: comment
-              description: Tak jak poprzednio, będziemy potrzebować kontenera.
+              description: 'Tak jak poprzednio, będziemy potrzebować kontenera.'
               timestamp: 2.9
             - type: comment
               description: Przeniesiemy zawartość nagłówka do kontenera.
@@ -312,26 +337,35 @@ iterations:
               description: '`.flex-grid` będzie zawierać definicję siatki. O działaniu poszczególnych właściwości przeczytasz w materiałach dodatkowych tej iteracji'
               timestamp: 75.3
             - type: comment
-              description: '`align-items: center` wyśrodkowuje zawartość kolumn w pionie.'
+              description: "`align-items: center` wyśrodkowuje zawartość\_kolumn w pionie."
               timestamp: 126.4653445945946
             - type: comment
-              description: Na początek założymy, że każdy z elementów siatki zajmuje 100% szerokości kontenera.
+              description: 'Na początek założymy, że każdy z elementów siatki zajmuje 100% szerokości kontenera.'
               timestamp: 152.4
             - type: comment
-              description: Klasy określające szerokości kolumn napiszemy wewnątrz media-query - zależy nam, żeby na telefonach układ pozostał jednokolumnowy.
+              description: 'Klasy określające szerokości kolumn napiszemy wewnątrz media-query - zależy nam, żeby na telefonach układ pozostał jednokolumnowy.'
               timestamp: 179.7
             - type: comment
-              description: Nagłówek i opis aplikacji mają stare, niepotrzebne już style.
-              timestamp: 260.0
+              description: "Nagłówek i opis aplikacji mają\_stare, niepotrzebne już style."
+              timestamp: 260
             - type: comment
               description: Dopiszmy też kilka reguł określających wygląd tych elementów na małych ekranach.
-              timestamp: 278.0
+              timestamp: 278
             - type: comment
               description: Przetestuj zachowanie tego grida na różnych urządzeniach.
               timestamp: 370.3
+      - title: Materiały
+        deck:
+          deck: 55efdf6e1d83326e7d31becb
+          to: 55f0d3bc7c14e5e84baca498
+          from: 55f0b1957c14e5e84baca459
+        annotations: null
 
   - title: Iteracja 5
-    tasks: []
+    tasks:
+      - title: Task 5.
+        url: 'https://devmeetings.github.io/devmeeting-rwd/pl_05.html'
+        noOfTasks: 2
     materials:
       - title: Nawigacja
         material: 55ee28f56c1d543104d65ef6
@@ -340,33 +374,32 @@ iterations:
           annotations:
             - type: comment
               description: Obecna nawigacja nie mieści się na małych ekranach
-              timestamp: 1.0
+              timestamp: 1
             - type: comment
               description: Jednym z najprostszych rozwiązań jest stworzenie dropdowna z listą linków
               timestamp: 12.3
             - type: comment
               description: Jako `value` podany jest id sekcji.
-              timestamp: 53.0
+              timestamp: 53
             - type: comment
               description: Select powinien być widoczny tylko na urządzeniach mobilnych
-              timestamp: 105.0
+              timestamp: 105
             - type: comment
               description: Nawigacja będzie widoczna tylko na desktopie
-              timestamp: 115.0
+              timestamp: 115
             - type: comment
               description: Klasa ukrywająca zawartość na urządzeniach mobilnych jest już gotowa
-              timestamp: 135.0
+              timestamp: 135
             - type: comment
               description: Dopiszmy analogiczną klasę.
-              timestamp: 145.0
+              timestamp: 145
             - type: comment
               description: Należy ostylować selecta.
               timestamp: 212.5
             - type: comment
               description: Używając jQuery obsłużymy wybór sekcji.
-              timestamp: 343.0
+              timestamp: 343
             - type: comment
               description: W tym przypadku najprostszym rozwiązaniem będzie kliknięcie w link o tym samym adresie.
-              timestamp: 385.0
-
+              timestamp: 385
 links: []

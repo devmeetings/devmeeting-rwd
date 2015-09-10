@@ -1,0 +1,27 @@
+<h3>Co to jest BEM?</h3>
+<p>
+	Metodologia nazewnictwa klas w HTML, której celem jest zapisanie relacji między elementami, promowanie modularności kodu oraz ułatwienie współpracy w zespołach z wieloma programistami.<br/>
+	BEM to skrót od <b>Block, Element, Modifier</b>. Zgodnie z BEM klasy powinny być zapisywane w formacie <code>.block__element--modifier</code>.
+</p>
+<h3>Blok</h3>
+<p>
+	Blok to oddzielny logicznie i wizualnie komponent, który może zostać ostylowany w separacji od reszty strony. <br/>
+	Klasa tego elementu składa się z jednego członu; wyrazy oddzielone są myślnikami, np: <code>.grid</code>, <code>.modal-box</code>.
+</p>
+
+<h3>Element</h3>
+<p>
+	Element to fragment kodu, który może istnieć tylko wewnątrz bloku. <br/>
+	Klasa tego elementu składa się z nazwy bloku oraz nazwy elementu, rozdzielonych podwójnym znakiem podkreślenia: <code>.block-name__element-name</code>.
+</p>
+
+
+<h3>Modyfikator</h3>
+<p>
+	Modyfikator to sposób na stworzenie wariantów bloku lub elementu. W BEM jest to dodatkowy człon klasy, oddzielony od reszty podwójnym myślnikiem.
+	Modyfikator może być aplikowany zarówno do bloku, jak i do elementu:<br/>
+	<code>.grid--fancy</code>, <code>.grid--fancy__item</code>, <code>.grid__item--wide</code>, <code>.grid--fancy__item--wide</code>.
+</p>
+
+<h3>Materiały dodatkowe</h3>
+<a href="https://en.bem.info/">Strona projektu BEM</a>

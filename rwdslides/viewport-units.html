@@ -1,0 +1,63 @@
+<h2>Bazujace na rozmiarze tekstu</h2>
+<p>
+	Wymiarowanie elementów strony względem rozmiaru tekstu pozwala na łatwe przeskalowanie całej strony poprzez zmianę jednej wartości w <code>@media</code>. <br/>
+	Jednostki, które na to pozwalają to <code>em</code> oraz <code>rem</code> - <b>root em</b>. 
+	
+</p>
+<h3>em</h3>
+<p>
+	<code>em</code> pozwala określić wielkosć właściwości elementu (np. padding, margin, etc) względem rozmiaru tekstu <b>na tym elemencie</b> lub <b>jego rodzicu</b>. 
+	W ten sposób, zakładając rozmiar tekstu równy <code>18px</code>: <code>1em = 18px</code>, <code>2em = 36px</code>, <code>.5em = 9px</code>, itd.
+</p>
+<h3>rem</h3>
+<p>
+	<code>rem</code> działa na bardzo podobnej zasadzie, ale wartość jest wyliczana względem rozmiaru tekstu w elemencie nadrzędnym (najczęściej jest to tag `html`).  
+</p>
+
+<h3>Więcej o tych jednostkach</h3>
+<ul>
+	<li>
+          <a href="http://casjam.com/css-font-sizes-using-ems-explained/">
+             CSS Font Sizes Using Ems, Explained
+          </a>
+      </li>
+	  <li>
+          <a href="https://css-tricks.com/rems-ems/">
+              Font Size Idea: px at the Root, rem for Components, em for Text Elements
+          </a>
+      </li>
+</ul>
+
+<h2>Bazujące na rozmiarze ekranu</h2>
+<p>
+	Często przydatną techniką jest wymiarowanie elementów względem wielkości `viewportu` - czyli wielkości ekranu pod odjęciu stałych elementów interfejsu (np. pasek przeglądarki).
+</p>
+<p>
+	W tym celu możemy użyć jednej z 4 jednostek:
+	<ul>
+		<li><code>vw</code>: 1/100 szerokości ekranu.</li>
+		<li><code>vh</code>: 1/100 wysokości ekranu.</li>
+		<li><code>vmax</code>: 1/100 dłuższej krawędzi ekranu.</li>
+		<li><code>vmin</code>: 1/100 krótszej krawędzi ekranu.</li>
+	</ul>
+	<img src="//local.xplatform.org/cdn/rwd/1.0.0/images/assets/viewport-units.png">
+</p>
+
+<h3>Więcej o tych jednostkach</h3>
+<ul>
+	<li>
+          <a href="https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/">
+              Viewport units: vw, vh, vmin, vmax
+          </a>
+      </li>
+	  <li>
+          <a href="https://css-tricks.com/viewport-sized-typography/">
+              Viewport Sized Typography
+          </a>
+      </li>
+	  <li>
+          <a href="http://tutorialzine.com/2015/05/simplify-your-stylesheets-with-the-magical-css-viewport-units/">
+              Simplify Your Stylesheets With The Magical CSS Viewport Units
+          </a>
+      </li>
+</ul>

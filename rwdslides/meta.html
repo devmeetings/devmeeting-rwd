@@ -1,0 +1,71 @@
+<p>
+	Większość urządzeń mobilnych (telefony, tablety) otwierając nieresponsywną stronę przeskaluje ją w taki sposób, żeby zmieściła się na ekranie. 
+	To oczywiście nieporządane zachowanie, bo najczęściej rezultatem jest znacznie pomniejszona strona, którą użytkownik musi ręcznie powiększać.
+</p>
+
+<p>
+	Rozwiązaniem tego problemu jest umieszczenie na stronie tagu <code>meta</code>, który odpowiednio zmodyfikuje zachowanie urządzenia. Najprostsza wersja takiego taga to:
+	<pre>&lt;meta name="viewport" content="width=device-width"&gt;</pre>
+	Powyższy tag ustawia szerokość okna przeglądarki na szerokość ekranu urządzenia w efekcie zapobiegając przeskalowaniu na większości urządzeń.
+</p>
+
+<p>
+	Żeby upewnić się, że strona nie zostanie przeskalowana możemy dodać właściwość `initial-scale`:
+	<pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</pre>
+</p>
+
+<h2>Właściwości tagu `viewport`</h2>
+<table class=table>
+	<tbody>
+		<tr>
+			<th>Property</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>width</td>
+			<td>The width of the virtual viewport of the device. </td>
+		</tr>
+		<tr>
+			<td>device-width</td>
+			<td>The physical width of the device's screen.</td>
+		</tr>
+		<tr>
+			<td>height</td>
+			<td>The height of the "<em>virtual viewport</em>" of the device.</td>
+		</tr>
+		<tr>
+			<td>device-height</td>
+			<td>The physical height of the device's screen.</td>
+		</tr>
+		<tr>
+			<td>initial-scale</td>
+			<td>The initial zoom when visiting the page. 1.0 does not zoom.</td>
+		</tr>
+		<tr>
+			<td>minimum-scale</td>
+			<td>The minimum amount the visitor can zoom on the page. 1.0 does not zoom.</td>
+		</tr>
+		<tr>
+			<td>maximum-scale</td>
+			<td>The maximum amount the visitor can zoom on the page. 1.0 does not zoom.</td>
+		</tr>
+		<tr>
+			<td>user-scalable</td>
+			<td>Allows the device to zoom in and out. Values are yes or no.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Dodatkowe materiały</h2>
+    <ul>
+      <li>
+          <a href="https://css-tricks.com/snippets/html/responsive-meta-tag/">
+              Responsive Meta Tag
+          </a>
+      </li>
+      <li>
+          <a href="http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972">
+              Don’t Forget the Viewport Meta Tag
+          </a>
+      </li>
+  </ul>

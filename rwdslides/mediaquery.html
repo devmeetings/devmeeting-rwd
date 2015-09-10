@@ -1,0 +1,170 @@
+<div class="row">
+  <div class="col-sm-12">
+    <p>
+      Reguły <code>@media</code> pozwalają zdefiniować blok styli, które zostaną zastosowane tylko wtedy, gdy urządzenie, z którego korzysta użytkownik, spełnia określone warunki.
+    </p>
+    <h2>Składnia</h2>
+    <p>
+      Definicja reguły <code>@media</code> ma następujący format:
+<pre>@media &lt;media-query&gt; {
+  &lt;style&gt;
+}</pre>
+    </p>
+    <p>
+      <code>&lt;media-query&gt;</code> składa się z określenia typu urządzenia (<b>media type</b>) oraz właściwości (<b>media features</b>). Przykładowe reguły media:  
+    </p>
+    <p>
+      <pre>@media (min-width: 700px) and (orientation: landscape) { ... }</pre>
+      Style zdefiniowane wewnątrz tej reguły będą działać na urządzeniach dowolnego typu o minimalnej szerokości 700px, które trzymane są poziomo.
+    </p>
+    <p>
+      <pre>@media print { ... }</pre>
+      Style zdefiniowane wewnątrz tej reguły będą zastosowane tylko w przypadku drukowania strony.
+    </p>
+    
+    <h2>Typy mediów dla reguły <code>@media</code></h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Typ</th>
+          <th>Urządzenia</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td>all</td>
+          <td>wszystkie</td>
+        </tr>
+      
+        <tr>
+          <td>speech</td>
+          <td>syntezatory mowy i dźwięku</td>
+        </tr>
+      
+        <tr>
+          <td>screen</td>
+          <td>ekrany komputerów</td>
+        </tr>
+        <tr>
+          <td>handheld</td>
+          <td>urządzenia mobilne</td>
+        </tr>
+        <tr>
+          <td>tv</td>
+          <td>telewizory</td>
+        </tr>
+        <tr>
+          <td>print</td>
+          <td>druk</td>
+        </tr>
+         <tr>
+          <td>projection</td>
+          <td>projektory</td>
+        </tr>
+        <tr>
+          <td>tty</td>
+          <td>terminale, teleprintery</td>
+        </tr>
+        <tr>
+          <td>braille</td>
+          <td>urządzenia dla niewidomych</td>
+        </tr>
+        <tr>
+          <td>embossed</td>
+          <td>drukarki Brailla</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+    <h2>Właściwości reguł <code>@media</code></h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Właściwość</th>
+          <th>Działanie</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td>min-width/max-width</td>
+          <td>określa minimalną/maksymalną wartość szerokości okna przeglądarki</td>
+        </tr>
+      
+        <tr>
+          <td>min-height/max-height</td>
+          <td>określa minimalną/maksymalną wartość szerokości okna przeglądarki</td>
+        </tr>
+        <tr>
+          <td>orientation</td>
+          <td>określenie orientacji pionowej lub poziomej urządzenia</td>
+        </tr>
+      
+        <tr>
+          <td>resolution</td>
+          <td>określenie wartości gęstości pikseli dla danego urządzenia</td>
+        </tr>
+      
+        <tr>
+          <td>device-width</td>
+          <td>określa szerokość ekranu urządzenia</td>
+        </tr>
+      
+        <tr>
+          <td>device-height</td>
+          <td>określa szerokość ekranu urządzenia</td>
+        </tr>
+      
+        <tr>
+          <td>color</td>
+          <td>określa liczę bitów na kolor lub sprawdza czy urządzenie posiada kolorowy ekran</td>
+        </tr>
+      
+        <tr>
+          <td>color-index</td>
+          <td>określa głębię kolorów obsługiwanych przez urządzenie</td>
+        </tr>
+      
+        <tr>
+          <td>aspect-ratio</td>
+          <td>określa proporcje okna przeglądarki</td>
+        </tr>
+      
+        <tr>
+          <td>device-aspect-ratio</td>
+          <td>określa proporcje ekranu urządzenia</td>
+        </tr>
+      
+        <tr>
+          <td>grid</td>
+          <td>określa urządzenia z ograniczonymi możliwościami wyświetlania (terminale, teleprintery)</td>
+        </tr>
+      
+        <tr>
+          <td>monochrome</td>
+          <td>określa liczbę bitów na piksel w urządzeniach monochromatycznych</td>
+        </tr>
+        <tr>
+          <td>scan</td>
+          <td>określa czy urządzenie posiada skanowanie obrazu progresywne czy międzyliniowe</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2>Dodatkowe materiały</h2>
+    <ul>
+      <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">
+              Media Queries na developer.mozilla.org
+          </a>
+      </li>
+      <li>
+          <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">
+              Media Queries dla popularnych urządzeń
+          </a>
+      </li>
+  </ul>
+  </div>
+</div>
