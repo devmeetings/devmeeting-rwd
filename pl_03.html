@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>RWD :: Grid</title>
+    <title>RWD :: Responsywne media</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="//local.xplatform.org/cdn/xpla-styles/2.0.0/xpla-styles.css">
 </head>
@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12"> 
+        <div class="col-xs-12">
             <header>
                 <h1 class="text-center">Zadanie 3</h1>
             </header>
@@ -20,85 +20,68 @@
             <section>
                 <h4>
                     3.1 <span class="label label-primary">Podstawowe</span>
-                    Wyświetl produkty w układzie 3-kolumnowym, a pola formularza w dwukolumnowym.
-                  </h4>
-                    <div class="images row">
-                      <div class="col-xs-10 col-xs-offset-1">
-                      <img class="img-responsive" src="./images/7_phone_grid.jpg">	
-                    </div>
-                    </div>
-                
+                    Miniaturki produktów powinny poprawnie wyświetlać się na ekranach o dużej gęstości (retina)
+                </h4>
+                <p class="text-muted">
+                    Hint: zmianę gęstości ekranu możesz zasymulować korzystając z Chrome DevTools.<br/>
+                    Hint: użyj <code>picture</code> oraz atrybutu <code>srcset</code>. <br/>
+                    Hint: pamiętaj o dodaniu obrazka, który wyświetli się w przypadku braku wsparcia. <br/>
+                </p>
             </section>
             <section>
                 <h4>
                     3.2 <span class="label label-primary">Podstawowe</span>
-                    Zadbaj o to, żeby siatka produktów była responsywna.
+                    Dodaj tło do formularza.
                 </h4>
-
                 <p class="text-muted">
-                    Podstawowa wersja może z góry zakładać rozmiar zmiany układu dla mniejszych urządzeń, to znaczy:
-                    <ul>
-                        <li>Układ jednokolumnowy pozostaje bez zmian</li>
-                        <li>Układ dwukolumnowy zmienia się na jednokolumnowy na tabletach i telefonach</li>
-                        <li>Układ 3-kolumnowy zmienia się na dwukolumnowy na tabletach i jednokolumnowy na telefonach</li>
-                    </ul>
+                    Upewnij się, że tło wypełnia całą powierzchnię formularza.
                 </p>
                 <div class="images row">
-                  <div class="col-xs-10 col-xs-offset-1">
-                    <img class="img-responsive" src="./images/7_phone_grid_responsive.jpg">
-                  </div>
+                    <a href="./images/32.png" class="col-sm-12">
+                        <img src="./images/32.png">
+                    </a>
                 </div>
             </section>
             <section>
                 <h4>
                     3.3 <span class="label label-success">Dodatkowe</span>
-                    Zaimplementuj klasy pozwalające na określenie jak będzie zmieniał się układ kolumn
+                    Zdjęcie w sekcji "Featured Product" powinno skalować się względem wybranego wierzchołka
                 </h4>
                 <p class="text-muted">
-                    Klasy powinny być zdefiniowane w sposób, który pozwala na konstrukcję podobną do: </br>
-					<code>
-						.large--1-of-3.medium--1-of-1.small--1-of-2
-					</code>
+                    Zaimplementuj klasy pozwalające na wybranie wierzchołka, względem którego zdjęcie ma być przycinane. <br/>
+
                 </p>
+                <div class="images row">
+                    <a href="./images/responsive-images-cropping-v.png" class="col-sm-12">
+                        <img src="./images/responsive-images-cropping-v.png"/>
+                    </a>
+                </div>
             </section>
             <section>
                 <h4>
                     3.4 <span class="label label-success">Dodatkowe</span>
-                    Dodaj do kafelka produktu dwa przyciski: "Kup teraz!" i "Obserwuj"
+                    Zdjęcie w sekcji "Featured Product" powinno skalować się względem wybranego punktu.
                 </h4>
-                <p>
-                	Przyciski powinny być umieszczone jak na rysunku:
+                <p class="text-muted">
+                    Rozwiń rozwiązanie z zadania 3.3:
                 </p>
-                <div class="images row">
-                  <div class="col-xs-10 col-xs-offset-1">
-
-                	 <img class="img-responsive" src="./images/8_phone_buy.jpg">
-                    Spróbuj wykorzystać wcześniej przygotowane klasy grida.
-                 </div>
-               </div>
-               
+                <div class="row images">
+                    <a href="./images/responsive-images-focal-point.png" class="col-sm-12">
+                        <img src="./images/responsive-images-focal-point.png"/>
+                    </a>
+                </div>
             </section>
             <section>
                 <h4>
                     3.5 <span class="label label-success">Dodatkowe</span>
-                    Stwórz sekcję "Featured Product".
+                    Dodaj sekcję "Promotion", która będzie zawierać osadzony film wideo.
                 </h4>
-
-                <p class="text-muted">
-                	Lista wymagań:
-                	<ul>
-                		<li>sekcja zajmuje conajmniej całą wysokość ekranu (viewport)</li>
-                		<li>zawiera zdjęcie, nazwę, cenę i przycisk "Kup teraz!"</li>
-                		<li>zawartość sekcji jest wycentrowana w pionie i poziomie</li>
-                		<li>poprawnie wyświetla się na małych ekranach</li>
-                	</ul>
+                <p>
+                    Tutaj znajdziesz przykładowy film w formacie WebM <a href="https://local.xplatform.org/cdn/rwd-shop/1.0.0/rabbit.webm">https://local.xplatform.org/cdn/rwd-shop/1.0.0/rabbit.webm</a>
                 </p>
-                <div class="images row">
-                  <div class="col-xs-10 col-xs-offset-1">
-                    	<img class="img-responsive" src="./images/8_phone_featured.jpg">
-                  </div>
-                </div>
-                
+                <p class="text-muted">
+                    Upewnij się, że wideo zachowuje poprawne proporcje niezależnie od rozmiaru ekranu.
+                </p>
             </section>
         </div>
     </div>

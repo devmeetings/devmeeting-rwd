@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>RWD :: Responsywne media</title>
+    <title>RWD :: Grid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="//local.xplatform.org/cdn/xpla-styles/2.0.0/xpla-styles.css">
 </head>
@@ -14,69 +14,91 @@
     <div class="row">
         <div class="col-xs-12">
             <header>
-                <h1 class="text-center">Zadanie 4</h1> 
+                <h1 class="text-center">Zadanie 4</h1>
             </header>
             <hr>
             <section>
                 <h4>
                     4.1 <span class="label label-primary">Podstawowe</span>
-                    Miniaturki produktów powinny poprawnie wyświetlać się na ekranach o dużej gęstości (retina)
+                    Wyświetl produkty w układzie 3-kolumnowym, a pola formularza w dwukolumnowym.
                 </h4>
-                <p class="text-muted">
-                    Hint: zmianę gęstości ekranu możesz zasymulować korzystając z Chrome DevTools.<br/>
-                    Hint: użyj <code>picture</code> oraz atrybutu <code>srcset</code>. <br/>
-                    Hint: pamiętaj o dodaniu obrazka, który wyświetli się w przypadku braku wsparcia. <br/>
-                </p>
+                <div class="images row">
+                    <a href="./images/41.png" class="col-xs-12">
+                        <img class="img-responsive" src="./images/41.png">
+                    </a>
+                </div>
+
             </section>
             <section>
                 <h4>
                     4.2 <span class="label label-primary">Podstawowe</span>
-                    Dodaj tło do formularza.
+                    Zadbaj o to, żeby siatka produktów była responsywna.
                 </h4>
+
                 <p class="text-muted">
-                    Upewnij się, że tło wypełnia całą powierzchnię formularza.
+                    Podstawowa wersja może z góry zakładać rozmiar zmiany układu dla mniejszych urządzeń, to znaczy:
+                <ul>
+                    <li>Układ jednokolumnowy pozostaje bez zmian</li>
+                    <li>Układ dwukolumnowy zmienia się na jednokolumnowy na tabletach i telefonach</li>
+                    <li>Układ 3-kolumnowy zmienia się na dwukolumnowy na tabletach i jednokolumnowy na telefonach</li>
+                </ul>
                 </p>
                 <div class="images row">
-                  <div class="col-sm-10 col-sm-offset-1">
-                    <img src="./images/10_form_background.png">
-                  </div>
+                    <a href="./images/42.png" class="col-xs-12">
+                        <img class="img-responsive" src="./images/42.png">
+                    </a>
                 </div>
             </section>
             <section>
                 <h4>
                     4.3 <span class="label label-success">Dodatkowe</span>
-                    Zdjęcie w sekcji "Featured Product" powinno skalować się względem wybranego wierzchołka
+                    Zaimplementuj klasy pozwalające na określenie jak będzie zmieniał się układ kolumn
                 </h4>
                 <p class="text-muted">
-                    Zaimplementuj klasy pozwalające na wybranie wierzchołka, względem którego zdjęcie ma być przycinane. <br/>
-                    <div class="text-center">
-                        <img src="./images/responsive-images-cropping-v.png"/>
-                    </div>
+                    Klasy powinny być zdefiniowane w sposób, który pozwala na konstrukcję podobną do: </br>
+                    <code>
+                        .large--1-of-4.medium--1-of-1.small--1-of-2
+                    </code>
                 </p>
             </section>
             <section>
                 <h4>
                     4.4 <span class="label label-success">Dodatkowe</span>
-                    Zdjęcie w sekcji "Featured Product" powinno skalować się względem wybranego punktu.
+                    Dodaj do kafelka produktu dwa przyciski: "Kup teraz!" i "Obserwuj"
                 </h4>
-                <p class="text-muted">
-                    Rozwiń rozwiązanie z zadania 4.3:
-                    <div class="text-center">
-                        <img src="./images/responsive-images-focal-point.png"/>
-                    </div>
+                <p>
+                    Przyciski powinny być umieszczone jak na rysunku:
+                </p>
+                <div class="images row">
+                    <a href="./images/44.png" class="col-xs-12">
+                        <img class="img-responsive" src="./images/44.png">
+                    </a>
+                </div>
+                <p>
+                    Spróbuj wykorzystać wcześniej przygotowane klasy grida.
                 </p>
             </section>
             <section>
                 <h4>
                     4.5 <span class="label label-success">Dodatkowe</span>
-                    Dodaj sekcję "Promotion", która będzie zawierać osadzony film wideo.
+                    Stwórz sekcję "Featured Product".
                 </h4>
-                <p>
-                  Tutaj znajdziesz przykładowy film w formacie WebM <a href="https://local.xplatform.org/cdn/rwd-shop/1.0.0/rabbit.webm">https://local.xplatform.org/cdn/rwd-shop/1.0.0/rabbit.webm</a>
-                </p>
+
                 <p class="text-muted">
-                    Upewnij się, że wideo zachowuje poprawne proporcje niezależnie od rozmiaru ekranu.
+                    Lista wymagań:
+                <ul>
+                    <li>sekcja zajmuje conajmniej całą wysokość ekranu (viewport)</li>
+                    <li>zawiera zdjęcie, nazwę, cenę i przycisk "Kup teraz!"</li>
+                    <li>zawartość sekcji jest wycentrowana w pionie i poziomie</li>
+                    <li>poprawnie wyświetla się na małych ekranach</li>
+                </ul>
                 </p>
+                <div class="images row">
+                    <a href="./images/45.png" class="col-xs-12">
+                        <img class="img-responsive" src="./images/45.png">
+                    </a>
+                </div>
+
             </section>
         </div>
     </div>
