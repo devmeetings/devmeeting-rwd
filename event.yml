@@ -357,7 +357,7 @@ iterations:
       - title: Materiały
         deck:
           deck: 55efdf6e1d83326e7d31becb
-          to: 55f0d3bc7c14e5e84baca498
+          to: 55f0d6ad7c14e5e84baca49b
           from: 55f0b1957c14e5e84baca459
         annotations: null
 
@@ -402,4 +402,11 @@ iterations:
             - type: comment
               description: W tym przypadku najprostszym rozwiązaniem będzie kliknięcie w link o tym samym adresie.
               timestamp: 385
+      - title: Materiały
+        deck:
+          deck: 55efdf6e1d83326e7d31becb
+          to: 55f0d3bc7c14e5e84baca498
+          from: 55f0d6ad7c14e5e84baca49b
+        annotations: null
+
 links: []
